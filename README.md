@@ -7,7 +7,7 @@ iOS 8 swift with KRHebbian ( Hebbian ) is one of learning rules of adjusting wei
 
 ## How To Get Started
 
-``` objective-c
+``` swift
 class ViewController: UIViewController {
     
     let krHebbian : KRHebbianAlgorithm = KRHebbianAlgorithm.sharedAlgorithm;
