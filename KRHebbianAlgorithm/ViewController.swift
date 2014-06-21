@@ -1,13 +1,13 @@
-swfit-KRHebbian-Algorithm
-=========================
+//
+//  ViewController.swift
+//  KRHebbianAlgorithm
+//
+//  Created by Kalvar on 2014/6/21.
+//  Copyright (c) 2014年 Kalvar. All rights reserved.
+//
 
-## What is it ?
+import UIKit
 
-iOS 8 swift with KRHebbian ( Hebbian ) is one of learning rules of adjusting weight in neural-network. If you wanna adjust weight in the algorithms of neurl-network ( Ex : BPN ), that you can use this method to adjust the weight everytime.
-
-## How To Get Started
-
-``` objective-c
 class ViewController: UIViewController {
     
     let krHebbian : KRHebbianAlgorithm = KRHebbianAlgorithm.sharedAlgorithm;
@@ -18,10 +18,15 @@ class ViewController: UIViewController {
         transposeMatrix();
     }
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
     func runHebbian()
     {
         //神經元 1 權重（ X 向 ）( W1 )
         let _weights1 : Float[] = [0.5, 0.0, -1.0, 1.0];
+        //var _initialWeights : Float[][] = [_weights1];
         var _initialWeights : Any[] = [_weights1];
         
         //輸入 X1 向量 ( Y 向 )
@@ -43,6 +48,7 @@ class ViewController: UIViewController {
         let row1 = [1, 2, 3];
         let row2 = [4, 5, 6];
         let row3 = [7, 8, 9];
+        //一定要宣告成同型態再傳入 Function 裡才行，否則會收到 Error : can't reinterpretCast values of different sizes
         var rows : Any[] = [row1, row2, row3];
         
         var _transposedMatrix = krHebbian.transposeMatrix( rows );
@@ -50,13 +56,4 @@ class ViewController: UIViewController {
     }
     
 }
-```
-
-## Version
-
-V1.0
-
-## LICENSE
-
-MIT.
 
