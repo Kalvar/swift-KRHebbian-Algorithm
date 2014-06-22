@@ -21,15 +21,15 @@ class ViewController: UIViewController {
     func runHebbian()
     {
         //神經元 1 權重（ X 向 ）( W1 )
-        let _weights1 : Float[] = [0.5, 0.0, -1.0, 1.0];
-        var _initialWeights : Any[] = [_weights1];
+        let weights1 : Float[]     = [0.5, 0.0, -1.0, 1.0];
+        var initialWeights : Any[] = [weights1];
         
         //輸入 X1 向量 ( Y 向 )
-        let _x1 : Float[] = [0.0, 1.5, -2.0, 1.0];
+        let x1 : Float[] = [0.0, 1.5, -2.0, 1.0];
         
         krHebbian.theta   = 1.0;
-        krHebbian.weights = _initialWeights;
-        krHebbian.params  = _x1;
+        krHebbian.weights = initialWeights;
+        krHebbian.params  = x1;
         krHebbian.training();
         
         //訓練結果 : 1 維陣列
