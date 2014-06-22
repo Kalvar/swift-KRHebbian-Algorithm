@@ -205,6 +205,14 @@ class KRHebbianAlgorithm : NSObject
         //如果第 1 個值為陣列
         switch _matrix[0]
         {
+            /*
+            //可以判斷成功
+            case is Double[], is Float[], is Int[], is Any[]:
+                //但不知道該轉成何種型態，It doesn't work.
+                let _firstMatrix = _matrix[0] as ???;
+                _xCount = _firstMatrix.count;
+                _yCount = _matrix.count;
+            */
             case let _firstMatrix as Double[]:
                 //即為 N 維陣列
                 _xCount = _firstMatrix.count;
@@ -221,6 +229,7 @@ class KRHebbianAlgorithm : NSObject
             case let _firstMatrix as Any[]:
                 _xCount = _firstMatrix.count;
                 _yCount = _matrix.count;
+            
             default:
                 _xCount = _matrix.count;
                 _yCount = 0;
@@ -258,6 +267,11 @@ class KRHebbianAlgorithm : NSObject
                     //只能用 switch 判斷型態嗎 ? 好麻煩 囧
                     switch _matrix[y]
                     {
+                        /*
+                        case is Double[], is Float[], is Int[], is Any[]:
+                            let _subMatrix : Any[] = _matrix[y] as Any[];
+                            _newRows.append( _subMatrix[x] );
+                        */
                         case let _subMatrix as Double[]:
                             _newRows.append( _subMatrix[x] );
                         case let _subMatrix as Float[]:
