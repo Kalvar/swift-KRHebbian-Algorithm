@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     func runHebbian()
     {
         //神經元 1 權重（ X 向 ）( W1 )
-        let weights1 : Float[] = [0.5, 0.0, -1.0, 1.0];
+        let weights1 : Float[]     = [0.5, 0.0, -1.0, 1.0];
         //var _initialWeights : Float[][] = [weights1];
         var initialWeights : Any[] = [weights1];
         

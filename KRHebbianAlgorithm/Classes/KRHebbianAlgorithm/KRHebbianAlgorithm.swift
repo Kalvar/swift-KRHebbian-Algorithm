@@ -168,13 +168,14 @@ class KRHebbianAlgorithm : NSObject
         {
             static let instance : KRHebbianAlgorithm = KRHebbianAlgorithm();
         }
-        println("sharedAlgorithm calling");
+        //println("sharedAlgorithm calling");
         return Singleton.instance;
     }
     
     init()
     {
-        println("init calling");
+        super.init();
+        //println("init calling");
         theta              = 0.0;
         weights            = [];
         params             = [];
@@ -217,7 +218,8 @@ class KRHebbianAlgorithm : NSObject
                 //即為 N 維陣列
                 _xCount = _firstMatrix.count;
                 _yCount = _matrix.count;
-            
+                //直接進入下一個 case，但 case 裡不可包含 let xxx as 的參數語句
+                //fallthrough;
             case let _firstMatrix as Float[]:
                 _xCount = _firstMatrix.count;
                 _yCount = _matrix.count;
