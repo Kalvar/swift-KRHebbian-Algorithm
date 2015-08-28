@@ -9,7 +9,7 @@ KRHebbian is a self-learning algorithm (adjust the weights) in neural network of
 
 ```ruby
 platform :ios, '8.0'
-pod "KRHebbian", "~> 1.1"
+pod "Swift+KRHebbian", "~> 1.1"
 ```
 
 ## How To Get Started
