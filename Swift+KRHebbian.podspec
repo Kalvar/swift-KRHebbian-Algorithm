@@ -12,6 +12,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Kalvar/swift-KRHebbian-Algorithm.git", :tag => s.version.to_s }
   s.platform     = :ios, '8.0'
   s.requires_arc = true
-  s.public_header_files = 'ML/Swift+KRHebbian.swift'
-  s.source_files = 'ML/Swift+KRHebbian.swift'
+  s.source_files = 'ML/*'
 end 
