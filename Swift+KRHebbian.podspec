@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "swift-KRHebbian"
+  s.name         = "Swift+KRHebbian"
   s.version      = "1.1"
   s.summary      = "Self learning the adjust weight method on Machine Learning."
   s.description  = <<-DESC
@@ -10,9 +10,8 @@ Pod::Spec.new do |s|
   s.author       = { "Kalvar Lin" => "ilovekalvar@gmail.com" }
   s.social_media_url = "https://twitter.com/ilovekalvar"
   s.source       = { :git => "https://github.com/Kalvar/swift-KRHebbian-Algorithm.git", :tag => s.version.to_s }
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
-  s.public_header_files = 'ML/*.swift'
-  s.source_files = 'ML/KRHebbian.swift'
-  s.frameworks   = 'Foundation'
+  s.public_header_files = 'ML/Swift+KRHebbian.swift'
+  s.source_files = 'ML/Swift+KRHebbian.swift'
 end 

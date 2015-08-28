@@ -13,7 +13,7 @@
 		8EC83A151B8F805300C2FA9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC83A141B8F805300C2FA9E /* Images.xcassets */; };
 		8EC83A181B8F805300C2FA9E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EC83A161B8F805300C2FA9E /* LaunchScreen.xib */; };
 		8EC83A241B8F805300C2FA9E /* KRHebbianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC83A231B8F805300C2FA9E /* KRHebbianTests.swift */; };
-		8EC83A321B8F80CF00C2FA9E /* KRHebbian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC83A311B8F80CF00C2FA9E /* KRHebbian.swift */; };
+		8EC83A321B8F80CF00C2FA9E /* Swift+KRHebbian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC83A311B8F80CF00C2FA9E /* Swift+KRHebbian.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		8EC83A1D1B8F805300C2FA9E /* KRHebbianTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KRHebbianTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC83A221B8F805300C2FA9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EC83A231B8F805300C2FA9E /* KRHebbianTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KRHebbianTests.swift; sourceTree = "<group>"; };
-		8EC83A311B8F80CF00C2FA9E /* KRHebbian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRHebbian.swift; sourceTree = "<group>"; };
+		8EC83A311B8F80CF00C2FA9E /* Swift+KRHebbian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+KRHebbian.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +118,7 @@
 		8EC83A301B8F80CF00C2FA9E /* ML */ = {
 			isa = PBXGroup;
 			children = (
-				8EC83A311B8F80CF00C2FA9E /* KRHebbian.swift */,
+				8EC83A311B8F80CF00C2FA9E /* Swift+KRHebbian.swift */,
 			);
 			path = ML;
 			sourceTree = "<group>";
@@ -224,7 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EC83A101B8F805300C2FA9E /* ViewController.swift in Sources */,
-				8EC83A321B8F80CF00C2FA9E /* KRHebbian.swift in Sources */,
+				8EC83A321B8F80CF00C2FA9E /* Swift+KRHebbian.swift in Sources */,
 				8EC83A0E1B8F805300C2FA9E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
